@@ -1,0 +1,37 @@
+@import url(../fonts/Montserrat-Bold.css);
+@import url(../fonts/Montserrat-SemiBold.css);
+@import url(../fonts/Montserrat-Medium.css);
+@import url(../fonts/Montserrat-Regular.css);
+@import url(../fonts/Montserrat-ExtraBold.css);
+
+body {
+    overflow-x: hidden;
+}
+
+.mon-bold {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+.mon-extrabold {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
+.mon-med {
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.mon-reg {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+.mon-semibold {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.pre-header {
+    color: #87A922;
+    letter-spacing: 3.64px;
+    line-height: normal;
+    font-size: 28px;
+}
