@@ -18,6 +18,9 @@
     align-items: center;
     gap: 22px;
 }
+.header__burger {
+    display: none;
+}
 .header__logo-img-block {
     width: 51px;
 }
@@ -29,7 +32,7 @@
     align-items: center;
     gap: 48px;
 }
-.header__nav-block {
+.header__nav-list {
     display: flex;
     gap: 48px;
 }
@@ -76,9 +79,6 @@
     background-color: rgba(135, 169, 34, 0.83);
     border: 0;
 }
-.first-slide__btn:first-child:hover {
-    background-color: #254E00;
-}
 .first-slide__btn:first-child p {
     color: #FFFCFC;
     line-height: normal;
@@ -87,12 +87,6 @@
 .first-slide__btn:last-child {
     border: 3px solid #000;
     opacity: 0.8;
-}
-.first-slide__btn:last-child:hover {
-    background-color: #000;
-}
-.first-slide__btn:last-child:hover p {
-    color: #FFFCFC;
 }
 .first-slide__btn:last-child p {
     line-height: normal;
@@ -175,9 +169,6 @@
     border: 0;
     background-color: rgba(135, 169, 34, 0.83);
 }
-.about__btn:hover {
-    background-color: #254E00;
-}
 .about__btn-text {
     color: #FFFCFC;
     font-size: 14px;
@@ -215,6 +206,12 @@
 }
 .categories__card-block {
 
+}
+.categories__card-img-block_phone {
+    display: none;
+}
+.categories__card-img_phone {
+    display: none;
 }
 .categories__card-header {
     color: #242424;
@@ -268,14 +265,14 @@
     transition: all .3s ease;
     cursor: pointer;
 }
-.categories__card-btn:hover {
-    background-color: #254E00;
-}
 .categories__card-btn-text {
     color: #FFF;
     font-size: 14px;
     line-height: 35px;
     letter-spacing: 1.82px;
+}
+.categories__card-content-right {
+    display: none;
 }
 
 .section__slider {
@@ -385,8 +382,6 @@
     min-height: 1005px;
     background-color: #F4EFD2;
 }
-.bestsellers {
-}
 .bestsellers__cards-block {
     padding-top: 54px;
     display: flex;
@@ -475,9 +470,6 @@
     background-color: #749315;
     cursor: pointer;
     transition: all .3s ease;
-}
-.bestsellers__card-btn:hover {
-    background-color: #254E00;
 }
 .bestsellers__card-btn-text {
     color: #FFF;

@@ -16,7 +16,7 @@
         <header>
             <section class="section__header">
                 <div class="container header">
-                    <a href="#start" class="go-to">
+                    <a href="#start" class="go-to" id="headerLogo">
                         <div class="header__logo-block">
                             <div class="header__logo-img-block">
                                 <img src="./images/logo.png" alt="logo" width="51px">
@@ -26,17 +26,26 @@
                             </div>
                         </div>
                     </a>
+                    <div id="burger" class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="header__menu-logo-block">
-                        <nav class="header__nav-block">
-                            <div class="header__nav-item-block">
-                                <a href="#products" class="header__nav-item-text mon-reg go-to">Products</a>
-                            </div>
-                            <div class="header__nav-item-block">
-                                <a href="#start" class="header__nav-item-text mon-reg go-to">Home</a>
-                            </div>
-                            <div class="header__nav-item-block">
-                                <a href="#about" class="header__nav-item-text mon-reg go-to">About Us</a>
-                            </div>
+                        <nav class="header__nav-block" id="nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item-block">
+                                    <a href="#products" class="header__nav-item-text mon-reg go-to" id="item1">Products</a>
+                                </li>
+                                <li class="header__nav-item-block">
+                                    <a href="#start" class="header__nav-item-text mon-reg go-to" id="item2">Home</a>
+                                </li>
+                                <li class="header__nav-item-block">
+                                    <a href="#about" class="header__nav-item-text mon-reg go-to" id="item3">About Us</a>
+                                </li>
+                            </ul>
+
                         </nav>
                         <div class="header__menu-logo-logo-block">
                             <img src="./images/logo2.png" alt="logo" width="62px">
@@ -51,7 +60,8 @@
                     <div class="first-slide__block">
                         <p class="pre-header mon-semibold">-TopHealth-</p>
                         <h1 class="first-slide__header mon-extrabold">Unlock Your<br> Full Potential</h1>
-                        <p class="first-slide__text mon-med">Help you to reach your daily recommended<br> intake of vitamins and minerals</p>
+                        <p class="first-slide__text mon-med">Help you to reach your<br class="br-phone_on">
+                            daily recommended<br class="br-phone_off"> intake<br class="br-phone_on"> of vitamins and minerals</p>
                         <div class="first-slide__btns-block">
                             <button class="first-slide__btn">
                                 <p class="first-slide__btn-text mon-bold">CATEGORIES</p>
@@ -68,7 +78,7 @@
                     <div class="container about">
                         <div class="about__block">
                             <p class="pre-header mon-semibold">-ABOUT US-</p>
-                            <h1 class="about__header mon-bold">Transform Your Health<br>with Superior<br>Supplements</h1>
+                            <h1 class="about__header mon-bold">Transform Your Health<br>with Superior <br class="br-phone_off">Supplements</h1>
                             <div class="about__text-block">
                                 <p class="about__text mon-reg">Welcome to YourSuppHub – 
                                     Your Go-To for Top Supplements at Unbeatable Prices! Find handpicked,
@@ -94,19 +104,30 @@
                     <div class="categories__header-block">
                         <p class="pre-header mon-semibold">-WHAT WE OFFER-</p>
                         <h1 class="categories__header mon-bold">OUR CATEGORIES</h1>
-                        <p class="categories__head-text mon-med">Best handpicked, budget-friendly options all in one place.</p>
+                        <p class="categories__head-text mon-med">Best handpicked, budget-friendly <br class="br-phone_on">options all in one place.</p>
                     </div>
                     <div class="categories__cards-block">
                         <div class="categories__card-block">
                             <p class="categories__card-header mon-semibold">VITAMINS & MINERALS</p>
                             <div class="categories__card-content">
-                                <div class="categories__card-img-block">
-                                    <img src="./images/imgonline.png" class="categories__card-img" alt="imgonline">                                    
+                                <div class="categories__card-content-left">
+                                    <div class="categories__card-img-block_phone">
+                                        <img src="./images/imgonline-phone.png" class="categories__card-img_phone" alt="imgonline">                                    
+                                    </div>
+                                    <div class="categories__card-img-block">
+                                        <img src="./images/imgonline.png" class="categories__card-img" alt="imgonline">                                    
+                                    </div>
+                                    <div class="categories__card-text-block">
+                                        <p class="categories__card-text mon-med">Unleash vitality with Zinc, Vitamin C,
+                                            Magnesium, and Vitamin D3! Supercharge your immunity,
+                                            energy, and bone health effortlessly. Elevate your wellness game now!</p>
+                                    </div>                                    
                                 </div>
-                                <div class="categories__card-text-block">
-                                    <p class="categories__card-text mon-med">Unleash vitality with Zinc, Vitamin C,
-                                        Magnesium, and Vitamin D3! Supercharge your immunity,
-                                        energy, and bone health effortlessly. Elevate your wellness game now!</p>
+                                <div class="categories__card-content-right">
+                                    <button class="categories__card-btn_phone">
+                                        <p class="categories__card-btn-text_phone mon-bold">SHOP NOW</p>
+                                        <img src="./icons/arrow-phone.png" alt="arrow">
+                                    </button>
                                 </div>
                             </div>
                             <button class="categories__card-btn">
@@ -117,13 +138,24 @@
                         <div class="categories__card-block">
                             <p class="categories__card-header mon-semibold">BRAIN SUPPLEMENTS</p>
                             <div class="categories__card-content">
-                                <div class="categories__card-img-block">
-                                    <img src="./images/mozg.png" class="categories__card-img" alt="brain">
+                                <div class="categories__card-content-left">
+                                    <div class="categories__card-img-block_phone">
+                                        <img src="./images/mozg-phone.png" class="categories__card-img_phone" alt="brain">                                    
+                                    </div>
+                                    <div class="categories__card-img-block">
+                                        <img src="./images/mozg.png" class="categories__card-img" alt="brain">
+                                    </div>
+                                    <div class="categories__card-text-block">
+                                        <p class="categories__card-text mon-med">Ignite mental brilliance with Ginkgo Biloba,
+                                            Omega-3, Phosphatidylserine, and Vitamin B12!
+                                            Supercharge your cognition, memory, and focus effortlessly. Elevate your mental acuity now!</p>
+                                    </div>                                    
                                 </div>
-                                <div class="categories__card-text-block">
-                                    <p class="categories__card-text mon-med">Ignite mental brilliance with Ginkgo Biloba,
-                                        Omega-3, Phosphatidylserine, and Vitamin B12!
-                                        Supercharge your cognition, memory, and focus effortlessly. Elevate your mental acuity now!</p>
+                                <div class="categories__card-content-right">
+                                    <button class="categories__card-btn_phone">
+                                        <p class="categories__card-btn-text_phone mon-bold">SHOP NOW</p>
+                                        <img src="./icons/arrow-phone.png" alt="arrow">
+                                    </button>
                                 </div>
                             </div>
                             <button class="categories__card-btn">
@@ -134,14 +166,25 @@
                         <div class="categories__card-block">
                             <p class="categories__card-header mon-semibold">SLEEP SUPPLEMENTS</p>
                             <div class="categories__card-content">
-                                <div class="categories__card-img-block">
-                                    <img src="./images/bed.png" class="categories__card-img" alt="bed"> 
+                                <div class="categories__card-content-left">
+                                    <div class="categories__card-img-block_phone">
+                                        <img src="./images/bed-phone.png" class="categories__card-img_phone" alt="bed">                                    
+                                    </div>
+                                    <div class="categories__card-img-block">
+                                        <img src="./images/bed.png" class="categories__card-img" alt="bed"> 
+                                    </div>
+                                    <div class="categories__card-text-block">
+                                        <p class="categories__card-text mon-med">Awaken vitality with Melatonin,
+                                            Magnesium, L-Theanine, and Vitamin B6! Enhance your sleep, relaxation,
+                                            and overall well-being effortlessly. Elevate your nighttime routine now!
+                                        </p>
+                                    </div>                                    
                                 </div>
-                                <div class="categories__card-text-block">
-                                    <p class="categories__card-text mon-med">Awaken vitality with Melatonin,
-                                        Magnesium, L-Theanine, and Vitamin B6! Enhance your sleep, relaxation,
-                                        and overall well-being effortlessly. Elevate your nighttime routine now!
-                                    </p>
+                                <div class="categories__card-content-right">
+                                    <button class="categories__card-btn_phone">
+                                        <p class="categories__card-btn-text_phone mon-bold">SHOP NOW</p>
+                                        <img src="./icons/arrow-phone.png" alt="arrow">
+                                    </button>
                                 </div>
                             </div>
                             <button class="categories__card-btn">
@@ -395,7 +438,7 @@
                         <div class="footer-main__logo-img-block">
                             <img src="./images/logo-foot.png" alt="logo">
                         </div>
-                        <p class="footer-main__logo-text mon-semibold">TopHealth</p>
+                        <p class="footer-main__logo-text mon-semibold">Top<br class="br-phone_on">Health</p>
                     </div>
                     <div class="footer-main__menu-block">
                         <nav class="footer-main__nav">

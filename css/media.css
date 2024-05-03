@@ -1,0 +1,508 @@
+@media(min-width: 890px) {
+    .first-slide__btn:first-child:hover {
+        background-color: #254E00;
+    }
+    .first-slide__btn:last-child:hover {
+        background-color: #000;
+    }
+    .first-slide__btn:last-child:hover p {
+        color: #FFFCFC;
+    }
+    .about__btn:hover {
+        background-color: #254E00;
+    }
+    .categories__card-btn:hover {
+        background-color: #254E00;
+    }
+    .bestsellers__card-btn:hover {
+        background-color: #254E00;
+    }
+}
+
+@media(max-width: 420px) {
+    .container {
+        max-width: 352px;
+    }
+    .br-phone_on {
+        display: block;
+    }
+    .br-phone_off {
+        display: none;
+    }
+    body.active {
+        overflow: hidden;
+    }
+
+    .section__header {
+        min-height: 44px;
+    }
+    .header {
+        min-height: 44px;
+    }
+    .header a {
+        z-index: 5;
+    }
+    .header__logo-img-block {
+        width: 29px;
+    }
+    .header__logo-text {
+        font-size: 10px;
+        letter-spacing: 0.9px;
+    }
+    .header__logo-block {
+        gap: 5px;
+    }
+    .header::before {
+        z-index: 3;
+    }
+    .header__nav-block.active {
+        transform: translate(0, 0);
+    }
+    .header__nav-list {
+        flex-direction: column;
+    }
+    .header__nav-block {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding: 80px 10px 30px 10px;
+        transition: all .3s linear;
+        transform: translate(0, -100%);
+    }
+    .header__burger {
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        position: relative;
+        z-index: 5;
+        order: 3;
+    }
+    .header__burger span {
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: #21243D;
+        position: absolute;
+        left: 5px;
+        transition: all 0.3s linear;
+    }
+    .header__burger span:first-child {
+        top: 0px;
+    }
+    .header__burger span:nth-child(2),
+    .header__burger span:nth-child(3) {
+        top: 11px;
+    }
+    .header__burger span:last-child {
+        top: 22px;
+    }
+    .header__burger.active span:first-child,
+    .header__burger.active span:last-child {
+        display: none;
+    }
+    .header__burger.active span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    .header__burger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    .header__menu-logo-logo-block {
+        display: none;
+    }
+
+    .section__first-slide {
+        padding-top: 44px;
+        background-image: url(../images/first-bg-phone.png);
+        min-height: 215px;
+    }
+    .first-slide__block {
+        padding-top: 17px;
+    }
+    .pre-header {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+    .first-slide__header {
+        font-size: 16px;
+        letter-spacing: 2.08px;
+    }
+    .first-slide__text {
+        font-size: 12px;
+        letter-spacing: 1.32px;
+        padding-top: 8px;
+    }
+    .first-slide__btns-block {
+        gap: 16px;
+        padding-top: 16px;
+        padding-left: 0px;
+    }
+    .first-slide__btn:last-child {
+        border: 1.5px solid #000;
+    }
+    .first-slide__btn {
+        width: 4.375rem;
+        height: 1.5625rem;
+        border-radius: 100px;
+    }
+    .first-slide__btn-text {
+        font-size: 8px;
+        letter-spacing: 0.56px;
+    }
+
+    .section__about {
+        background-image: url(../images/bg2-phone.png);
+        min-height: 399px;
+    }
+    .about__block {
+        padding-top: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__header {
+        font-size: 16px;
+        letter-spacing: 2.08px;
+        padding: 5px 0 21px 0;
+    }
+    .about__text-block {
+        width: 19.125rem;
+        text-align: justify;
+    }
+    .about__text {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.98px;
+        padding-bottom: 29px;
+    }
+    .about__list {
+        gap: 0px;
+        padding-bottom: 21px;
+        align-self: flex-start;
+    }
+    .about__list li {
+        background-image: url(../icons/Ellipse-phone.png);
+        line-height: 15px;
+        font-size: 10px;
+        letter-spacing: 1.3px;
+        padding-left: 12px;
+    }
+    .about__btn {
+        width: 5rem;
+        height: 1.875rem;
+        align-self: flex-start;
+    }
+    .about__btn-text {
+        font-size: 8px;
+        letter-spacing: 0.56px;
+    }
+    .section-img-about {
+        display: none;
+    }
+
+    .section__categories {
+        min-height: 689px;
+    }
+    .categories__header-block {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .categories__header {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1.6px;
+        padding-top: 0px;
+    }
+    .categories__head-text {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1.3px;
+        text-align: center;
+    }
+    .categories__cards-block {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 19px;
+    }
+    .categories__card-header {
+        font-size: 10px;
+        line-height: 19px;
+        letter-spacing: 1.3px;
+        padding-bottom: 0px;
+    }
+    .categories__card-content {
+        display: flex;
+        gap: 6px;
+        padding-left: 10px;
+        padding-top: 8px;
+        border-left: 2px solid rgba(56, 116, 1, 0.64);
+        height: 10.25rem;
+    }
+    .categories__card-img-block {
+        display: none !important;
+    }
+    .categories__card-img-block_phone {
+        display: block;
+        padding-bottom: 6px;
+    }
+    .categories__card-img_phone {
+        display: block;
+    }
+    .categories__card-img {
+        display: none;
+    }
+    .categories__card-text-block {
+        width: 13.875rem;
+        padding-bottom: 0px;
+    }
+    .categories__card-text {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.56px;
+    }
+    .categories__card-btn {
+        display: none;
+    }
+    .categories__card-content-right {
+        align-self: flex-end;
+        display: block;
+    }
+    .categories__card-btn_phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        border: 0;
+        background-color: #749315;
+        gap: 4px;
+        width: 5.625rem;
+        height: 2.5rem;
+    }
+    .categories__card-btn-text_phone {
+        color: #fff;
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: 0.24px;
+    }
+
+    .section__slider {
+        min-height: 38px;
+        background-color: #2C5C01;
+    }
+
+    .section__features {
+        background-image: url(../images/bg3-phone.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 490px;
+    }
+    .features {
+        max-width: 376px;
+    }
+    .features__header-block {
+        padding-top: 19px;
+        padding-left: 10px;
+    }
+    .features__header {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 0.06rem;
+    }
+    .features__text-block {
+        width: 19.8125rem;
+        padding-top: 0px;
+    }
+    .features__text {
+        font-size: 0.625rem;
+        line-height: 1rem;
+        letter-spacing: 0.05625rem;
+    }
+    .features__items-block {
+        gap: 8px;
+        padding-left: 0px;
+        padding-top: 22px;
+    }
+    .features__item-img-block img {
+        width: 40px;
+    }
+    .features__item-block:nth-child(2) {
+        align-self: flex-end;
+    }
+    .features__item-block:nth-child(2) .features__item-content-block h2 {
+        text-align: right;
+    }
+    .features__item-block:nth-child(2) .features__item-img-block {
+        order: 2;
+    }
+    .features__item-block {
+        gap: 10px;
+    }
+    .features__item-header {
+        font-size: 0.75rem;
+        line-height: 1.3125rem;
+        letter-spacing: 0.045rem;
+    }
+    .features__item-text-block {
+        width: 17.8125rem;
+        text-align: justify;
+    }
+    .features__item__text {
+        font-size: 0.625rem;
+        line-height: 1rem;
+        letter-spacing: 0.06875rem;
+    }
+
+    .seection__bestsellers-header {
+        min-height: 137px;
+    }
+    .bestsellers-header__header-block {
+        padding-top: 12px;
+    }
+    .bestsellers-header__header {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        letter-spacing: 0.06rem;
+    }
+    .bestsellers-header__text-block {
+        width: 18.5rem;
+    }
+    .bestsellers-header__text {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: 0.075rem;
+    }
+
+    .line-bestsellers {
+        width: 18.75rem;
+        height: 0.0625rem;
+    }
+    
+    .section__bestsellers {
+        min-height: 629px;
+    }
+    .bestsellers__cards-block {
+        padding-top: 12px;
+        gap: 12px 20px;
+    }
+    .bestsellers__card-block {
+        width: 8.75rem;
+        height: 12.0675rem;
+        border-radius: 25px;
+    }
+    .bestsellers__card-top-block {
+        width: 8.75rem;
+        height: 6.41669rem;
+        border-radius: 1.5625rem 1.5625rem 0rem 0rem;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20) inset;
+    }
+    .bestsellers__img-block {
+        padding-top: 14px;
+    }
+    .bestsellers__img-block img {
+        width: 44px;
+    }
+    .bestsellers__card-save-block {
+        width: 2.69563rem;
+        height: 0.62519rem;
+        border-radius: 0 5px 5px 0;
+        gap: 0px;
+    }
+    .bestsellers__card-save-block img {
+        width: 6px;
+    }
+    .bestsellers__card-save-text {
+        font-size: 0.3125rem;
+        letter-spacing: 0.04063rem;
+    }
+    .bestsellers__card-info-block {
+        gap: 5px;
+    }
+    .bestsellers__card-text-block {
+        width: 5.6875rem;
+        padding-top: 7px;
+    }
+    .bestsellers__card-text {
+        font-size: 0.625rem;
+        line-height: 0.8125rem;
+        letter-spacing: 0.04375rem;
+    }
+    .bestsellers__card-price-block {
+        gap: 5px;
+    }
+    .bestsellers__card-price {
+        font-size: 0.5rem;
+        line-height: 0.89rem;
+        letter-spacing: 0.025rem;
+    }
+    .bestsellers__card__second-price {
+        font-size: 0.4375rem;
+        letter-spacing: 0.02625rem;
+    }
+    .bestsellers__card-btn {
+        width: 4.17575rem;
+        height: 1.67031rem;
+    }
+    .bestsellers__card-btn img {
+        width: 8px;
+    }
+    .bestsellers__card-btn-text {
+        font-size: 0.375rem;
+        line-height: 2.1875rem;
+        letter-spacing: 0.04875rem;
+    }
+
+    .section__footer-main {
+        min-height: 54px;
+    }
+    .footer-main {
+        max-width: 376px;
+        align-items: center;
+        padding-top: 6px;
+    }
+    .footer-main__logo-block {
+        align-self: flex-end;
+        gap: 4px;
+    }
+    .footer-main__logo-img-block img {
+        width: 30px;
+    }
+    .footer-main__logo-text {
+        font-size: 0.75rem;
+        letter-spacing: 0.0675rem;
+    }
+    .footer-main__menu-block {
+        display: flex;
+        gap: 99px;
+        align-items: center;
+    }
+    .footer-main__nav {
+        gap: 16px;
+    }
+    .footer-main__nav-column {
+        gap: 7px;
+    }
+    .footer-main__nav-item {
+        font-size: 0.8125rem;
+        line-height: 1.05844rem;
+        letter-spacing: 0.05688rem;
+    }
+    .footer-main__icons-block {
+        display: none;
+    }
+    .footer-main__logo2-img-block {
+        display: none;
+    }
+    
+    .section__footer-bot {
+        min-height: 17px;
+    }
+    .footer-bot__text {
+        padding-top: 4px;
+        font-size: 0.5rem;
+        letter-spacing: 0.03rem;
+    }
+}

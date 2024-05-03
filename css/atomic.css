@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+a:hover {
+    color: inherit;
+}
+
 .mon-bold {
     font-family: 'Montserrat-Bold', sans-serif;
 }
@@ -25,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1472px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -34,4 +38,7 @@ body {
     letter-spacing: 3.64px;
     line-height: normal;
     font-size: 28px;
+}
+.br-phone_on {
+    display: none;
 }
