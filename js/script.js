@@ -33,3 +33,16 @@ headerLogo.addEventListener('click', burgerClose);
 item1.addEventListener('click', burgerClose);
 item2.addEventListener('click', burgerClose);
 item3.addEventListener('click', burgerClose);
+
+
+// Select
+const filterBlock = document.querySelector('#filterBlock');
+
+filterBlock.addEventListener('click', () => {
+    filterBlock.classList.toggle('active-select');
+})
+body.addEventListener('click', (e) => {
+    if (!e.target.closest('.filters__filter-block_products')) {
+        filterBlock.classList.remove('active-select');
+    }
+})

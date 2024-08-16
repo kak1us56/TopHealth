@@ -8,9 +8,9 @@ body {
     overflow-x: hidden;
 }
 
-a:hover {
+/* a:hover {
     color: inherit;
-}
+} */
 
 .mon-bold {
     font-family: 'Montserrat-Bold', sans-serif;
